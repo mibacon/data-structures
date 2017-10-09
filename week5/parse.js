@@ -25,6 +25,7 @@ MongoClient.connect(url, function (err, db) {
                     name: 1,
                     address: 1,
                     events: 1,
+                    details: 1,
                     timeMore: { $gt: ["$events.beginTimeMoment", 16] }
                 }
             },

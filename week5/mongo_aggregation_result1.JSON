@@ -21,6 +21,7 @@
             "endTime": "6:30 PM",
             "meetingType": "B = Beginners meeting"
         },
+        "details": "Beginners Meeting 2nd & 4th Sunday Step Meeting 1st &3rd Sunday",
         "timeMore": true
     },
     {
@@ -45,6 +46,7 @@
             "endTime": "6:30 PM",
             "meetingType": "B = Beginners meeting"
         },
+        "details": "T=Last Tuesday, Fri=Anniv. 2nd to Last Friday. All meetings are non-smoking.",
         "timeMore": true
     },
     {
@@ -68,6 +70,7 @@
             "endTime": "6:30 PM",
             "meetingType": "BB = Big Book meeting"
         },
+        "details": "",
         "timeMore": true
     },
     {
@@ -92,6 +95,7 @@
             "endTime": "7:45 PM",
             "meetingType": "OD = Open Discussion meeting"
         },
+        "details": "",
         "timeMore": true
     }
 ]
