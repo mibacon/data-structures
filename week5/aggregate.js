@@ -29,7 +29,9 @@ request(parsed, function (error, response, body) {
         var collection = db.collection(collName);
 
         //     // THIS IS WHERE THE DOCUMENT(S) IS/ARE INSERTED TO MONGO:
-        collection.insert(parsed);
+        collection.insert(parsed)
+
+        fs.writeFileSync('mongo_aggregation_result.JSON', JSON.stringify(parsed, null, 4));
 
         db.close();
         // })

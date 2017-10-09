@@ -1,101 +1,54 @@
 [
     {
-        "_id": "59db08cbf12df24ae4345287",
-        "branch": "Cathedral High School",
-        "name": "GOTHAM - Gotham",
+        "_id": "59dba6439cb8d622bc0289f8",
+        "branch": "",
+        "name": "MUSTARD SEED - Mustard Seed     (:I)",
         "address": {
-            "line1": "350 East 56th Street ",
-            "line2": "",
-            "line3": "56th Street & First Avenue, 3rd Floor Library ",
-            "city": "New York",
-            "zip": " 10022",
-            "latLong": {
-                "lat": 40.7576496,
-                "lng": -73.964016
-            }
-        },
-        "events": {
-            "weekDay": "Tuesday",
-            "beginTime": "5:30 PM",
-            "beginTimeMoment": 17,
-            "endTime": "6:30 PM",
-            "meetingType": "B = Beginners meeting"
-        },
-        "details": "Beginners Meeting 2nd & 4th Sunday Step Meeting 1st &3rd Sunday",
-        "timeMore": true
-    },
-    {
-        "_id": "59db08cbf12df24ae4345288",
-        "branch": "Soldiers, Sailors, Marines & Airmen's Club",
-        "name": "GRAND CENTRAL - Grand Central",
-        "address": {
-            "line1": "283 Lexington Avenue",
-            "line2": " 2nd Floor",
-            "line3": "(Betw 36th & 37th Streets) ",
+            "line1": "122 East 37th Street",
+            "line2": "  Basement",
+            "line3": "(Betw Park & Lexington Avenues) ",
             "city": "New York",
             "zip": " 10016",
             "latLong": {
-                "lat": 40.7479436,
-                "lng": -73.9782379
+                "lat": 40.7483346,
+                "lng": -73.97882589999999
             }
         },
         "events": {
             "weekDay": "Tuesday",
-            "beginTime": "5:30 PM",
-            "beginTimeMoment": 17,
-            "endTime": "6:30 PM",
-            "meetingType": "B = Beginners meeting"
+            "beginTime": "8:00 PM",
+            "beginTimeMoment": 20,
+            "endTime": "9:00 PM",
+            "meetingType": "C = Closed Discussion meeting",
+            "meetingSpecial": ""
         },
-        "details": "T=Last Tuesday, Fri=Anniv. 2nd to Last Friday. All meetings are non-smoking.",
+        "details": "Sun.7:30am,Tue.6:15pm B & Wed.6:15pm C =Meditation Wkshp., Sun.9:30am Step=Back to Basics, Fri.7:30pm=Anniv.every Fri. Thurs. 8am back room, Gratitude",
         "timeMore": true
     },
     {
-        "_id": "59db08cbf12df24ae4345295",
-        "branch": "Caron Foundation",
-        "name": "SERENITY EAST (:I) -",
+        "_id": "59dba6d67b5ee022e8bc22c0",
+        "branch": "",
+        "name": "MUSTARD SEED - Mustard Seed     (:I)",
         "address": {
-            "line1": "244 East 58th Street",
-            "line2": "",
-            "line3": "(Between 2nd and 3rd Avenues) 10022",
+            "line1": "122 East 37th Street",
+            "line2": "  Basement",
+            "line3": "(Betw Park & Lexington Avenues) ",
             "city": "New York",
+            "zip": " 10016",
             "latLong": {
-                "lat": 40.7600109,
-                "lng": -73.96544
+                "lat": 40.7483346,
+                "lng": -73.97882589999999
             }
         },
         "events": {
             "weekDay": "Tuesday",
-            "beginTime": "5:30 PM",
-            "beginTimeMoment": 17,
-            "endTime": "6:30 PM",
-            "meetingType": "BB = Big Book meeting"
+            "beginTime": "8:00 PM",
+            "beginTimeMoment": 20,
+            "endTime": "9:00 PM",
+            "meetingType": "C = Closed Discussion meeting",
+            "meetingSpecial": ""
         },
-        "details": "",
-        "timeMore": true
-    },
-    {
-        "_id": "59db08cbf12df24ae434529a",
-        "branch": "The Caron Foundation",
-        "name": "TRAFALGAR - Trafalgar",
-        "address": {
-            "line1": "244 East 58th Street",
-            "line2": "",
-            "line3": "(Betw. 2nd & 3rd Avenues) ",
-            "city": "New York",
-            "zip": " 10022",
-            "latLong": {
-                "lat": 40.7600109,
-                "lng": -73.96544
-            }
-        },
-        "events": {
-            "weekDay": "Tuesday",
-            "beginTime": "6:45 PM",
-            "beginTimeMoment": 18,
-            "endTime": "7:45 PM",
-            "meetingType": "OD = Open Discussion meeting"
-        },
-        "details": "",
+        "details": "Sun.7:30am,Tue.6:15pm B & Wed.6:15pm C =Meditation Wkshp., Sun.9:30am Step=Back to Basics, Fri.7:30pm=Anniv.every Fri. Thurs. 8am back room, Gratitude",
         "timeMore": true
     }
 ]

@@ -20,12 +20,13 @@ $('tbody tr').filter(function (i, el) {
         thisMeeting.address.line3 = $(elem).find('td').eq(0).contents().eq(8).text().trim().split('NY')[0]
         thisMeeting.address.city = 'New York'
         thisMeeting.address.zip = $(elem).find('td').eq(0).contents().eq(8).text().trim().split('NY')[1]
-        // thisMeeting.address.latLong = []
+
         thisMeeting.events = []
         thisMeeting.details = $(elem).find('td').eq(0).find('.detailsBox').text().trim()
         //can't get wheelchair to work
 
         var apiKey = process.env.GMAKEY
+
         var apiRequest = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + thisMeeting.address.line1.split(' ').join('+') + '&key=' + apiKey;
 
         request(apiRequest, function (err, resp, body) {
@@ -33,25 +34,38 @@ $('tbody tr').filter(function (i, el) {
             var temp = {}
             thisMeeting.address.latLong = JSON.parse(body).results[0].geometry.location;
         });
-
-        $(elem).find('td').find('b:contains("From")').each(function (i, el) {
+        
+        $(elem).find('td').find(':contains("From")').each(function (i, el) {
             var temp = {};
             temp.weekDay = $(el).contents().text().replace('s From', "")
-            temp.beginTime = $(el).parents().contents().get(2).nodeValue.trim()
-            temp.beginTimeMoment = parseInt(moment(temp.beginTime, "h:mm A").format("H"))
-            temp.endTime = $(el).parents().contents().get(4).nodeValue.trim()
-            temp.meetingType = $(el).parents().contents().get(7).nodeValue.trim()
-            //can't get Special Interest to Work
-            // $(el).parents().contents().find('b:contains("Special Interest")').each(function (i, ele) {
-            //     temp.specialInterest = $(ele).parents().contents().get(1).nodeValue.trim()
-            //     console.log(temp.specialInterest)
-            // })
+            //had to redo this section, but now it works!
+            $(el).filter(function () {
+                temp.beginTime = $(this.nextSibling).text().trim();
+                temp.beginTimeMoment = parseInt(moment(temp.beginTime, "h:mm A").format("H"))
+            });
+
+            $(el).next().filter(function () {
+                temp.endTime = $(this.nextSibling).text().trim();
+
+            })
+
+            $(el).next().next().next().filter(function () {
+                // $(el).nextUntil('<br>').filter(function () {
+                temp.meetingType = $(this.nextSibling).text().trim()
+            })
+
+            $(el).next().next().next().next().next().filter(function () {
+                temp.meetingSpecial = $(this.nextSibling).text().trim();
+
+            })
+
             thisMeeting.events.push(temp);
         })
 
+
         setTimeout(function () {
             meetingsData.push(thisMeeting)
-            console.log(meetingsData)
+            // console.log(meetingsData)
             fs.writeFileSync('/home/ubuntu/workspace/week5/output.txt', JSON.stringify(meetingsData))
         }, 5000)
 
