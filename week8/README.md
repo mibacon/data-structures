@@ -1,8 +1,8 @@
-#Project FEED ME
-##Data Model Schema and SQL Code
-##Week 8 Assignment
+# Project FEED ME
+## Data Model Schema and SQL Code
+## Week 8 Assignment
 
-###Model
+### Model
 I have been assigned both FSR and temperature sensors. My project will measure how temperature affects my plant's consumption of water. 
 Also explored will be how long it takes my plants to finish their water, and at what rate. 
 I will place the FSR sensor underneath the watertank (they're hydroponic) to measure how much water is left in the tank (a full tank will have a higher FSR score, while an empty tank a smaller FSR score).
@@ -17,7 +17,7 @@ The SQL table is pretty straightforward. For example:
  20.2 | 3000 | 2017-10-22 20:00:09.298532
  
  
-###SQL CODE
+### SQL CODE
 -----
 CREATE TABLE sensorData (temp REAL,fsr int, dataTime timestamp DEFAULT current_timestamp);
 
