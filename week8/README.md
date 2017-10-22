@@ -1,5 +1,8 @@
-# Project FEED ME
+Project FEED ME
+===============
+
 Data Model Schema and SQL Code
+
 Week 8 Assignment
 -----------------
 
