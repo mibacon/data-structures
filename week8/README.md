@@ -1,6 +1,7 @@
 # Project FEED ME
-## Data Model Schema and SQL Code
-## Week 8 Assignment
+Data Model Schema and SQL Code
+Week 8 Assignment
+-----------------
 
 ### Model
 I have been assigned both FSR and temperature sensors. My project will measure how temperature affects my plant's consumption of water. 
