@@ -1,9 +1,9 @@
 Project FEED ME
 ===============
 
-Data Model Schema and SQL Code
-Week 8 Assignment
------------------
+### Data Model Schema and SQL Code
+### Week 8 Assignment
+---------------------
 
 ### Model
 I have been assigned both FSR and temperature sensors. My project will measure how temperature affects my plant's consumption of water. 
@@ -14,8 +14,8 @@ This is a continuous data model, i.e. I will check both FSR and temperature meas
 The SQL table is pretty straightforward. For example:
 
    temp | fsr  |          datatime          
-| ------+------+----------------------------  
-|  20.2 | 3000 | 2017-10-22 20:00:09.298532  
+ ------+------+----------------------------  
+  20.2 | 3000 | 2017-10-22 20:00:09.298532  
  
  
 ### SQL CODE
@@ -25,8 +25,8 @@ CREATE TABLE sensorData (temp REAL,fsr int, dataTime timestamp DEFAULT current_t
            List of relations
            
    Schema |    Name    | Type  |  Owner  
-| --------+------------+-------+---------  
-|  public | sensordata | table | mibacon  
+ --------+------------+-------+---------  
+ public | sensordata | table | mibacon  
  
  INSERT INTO sensorData VALUES (20.2, 3000, default);
  
