@@ -31,4 +31,4 @@ CREATE TABLE sensorData (temp REAL,fsr int, dataTime timestamp DEFAULT current_t
  INSERT INTO sensorData VALUES (20.2, 3000, default);
  
  ### Draft Visualization
- ![vis](url)
+ ![Image of Vis](https://mibacon.github.io/data-structures/week8/WIN_20171022_16_42_39_Pro.jpg)
